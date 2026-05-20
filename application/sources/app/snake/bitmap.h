@@ -4,5 +4,6 @@
 #include "view_render.h"
 
 extern const unsigned char PROGMEM image_arrow_right_bits[];
+extern const unsigned char PROGMEM image_health[];
 
 #endif

@@ -24,6 +24,7 @@ const task_t app_task_table[] = {
 	{TASK_PRINT_TITLE_ID, TASK_PRI_LEVEL_4, task_title},
 	{TASK_CHANGE_CURSOR, TASK_PRI_LEVEL_4, change_menu_cursor},
 	{TASK_CHANGE_SCREEN, TASK_PRI_LEVEL_4, change_screen},
+	{TASK_UPDATE_POS, TASK_PRI_LEVEL_4, task_draw_snake},
 
 	#if defined(TASK_ZIGBEE_EN)
 	{AC_TASK_ZIGBEE_ID			,	TASK_PRI_LEVEL_4	,	task_zigbee			},

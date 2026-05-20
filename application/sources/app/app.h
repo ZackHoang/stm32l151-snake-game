@@ -115,7 +115,8 @@ enum
 	TASK_PRINT_TITLE = AK_USER_DEFINE_SIG,
 	CURSOR_UP,
 	CURSOR_DOWN,
-	CHANGE_SCREEN
+	CHANGE_SCREEN,
+	CHANGE_POS,
 };
 
 /*****************************************************************************/
