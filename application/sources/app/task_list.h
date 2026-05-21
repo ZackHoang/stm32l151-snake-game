@@ -31,6 +31,7 @@ enum {
 	TASK_CHANGE_CURSOR,
 	TASK_CHANGE_SCREEN,
 	TASK_UPDATE_POS,
+	TASK_GAME_OVER,
 
 #if defined(TASK_ZIGBEE_EN)
 	AC_TASK_ZIGBEE_ID,
@@ -89,11 +90,12 @@ extern void task_rf24_phy(ak_msg_t*);
 extern void task_rf24_mac(ak_msg_t*);
 extern void task_rf24_nwk(ak_msg_t*);
 
-// Tetrix tasks
+// Snake tasks
 extern void task_title(ak_msg_t *);
 extern void change_menu_cursor(ak_msg_t *);
 extern void change_screen(ak_msg_t *);
 extern void task_draw_snake(ak_msg_t *);
+extern void task_game_over(ak_msg_t *);
 
 /* LINK TASK */
 extern void task_link_phy(ak_msg_t*);

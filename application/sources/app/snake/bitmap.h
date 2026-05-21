@@ -5,5 +5,6 @@
 
 extern const unsigned char PROGMEM image_arrow_right_bits[];
 extern const unsigned char PROGMEM image_health[];
+extern const unsigned char PROGMEM image_cry_dolph_bits[];
 
 #endif

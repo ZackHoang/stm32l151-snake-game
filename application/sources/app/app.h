@@ -109,7 +109,7 @@ enum {
 	AC_IF_DYNAMIC_MSG_OUT,
 };
 
-// Tetrix signals
+// Snake signals
 enum
 {
 	TASK_PRINT_TITLE = AK_USER_DEFINE_SIG,
@@ -117,6 +117,7 @@ enum
 	CURSOR_DOWN,
 	CHANGE_SCREEN,
 	CHANGE_POS,
+	GAME_OVER,
 };
 
 /*****************************************************************************/
