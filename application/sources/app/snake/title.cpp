@@ -33,7 +33,6 @@ void item_render() {
 	view_render.print("Start");
 	view_render.setCursor(32, 56);
 	view_render.print("Options");
-	APP_DBG("\n** Current cursor: %d\n", curr_opt);
 	view_render.drawBitmap(20, options[curr_opt], image_arrow_right_bits, 11, 8, WHITE);
 }
 
