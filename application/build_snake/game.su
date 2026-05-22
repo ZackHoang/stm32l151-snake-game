@@ -1,12 +1,13 @@
-sources/app/snake/game.cpp:87:6:void render_game_over()	24	static
-sources/app/snake/game.cpp:159:6:void task_game_over(ak_msg_t*)	0	static
-sources/app/snake/game.cpp:31:6:void init_snake_coords()	32	static
-sources/app/snake/game.cpp:38:6:void rotate_snake_clock_wise(snake_coords&)	0	static
-sources/app/snake/game.cpp:63:6:void rotate_snake_counter_clock_wise(snake_coords&)	0	static
-sources/app/snake/game.cpp:106:6:void randomize_health()	8	static
-sources/app/snake/game.cpp:127:6:void task_draw_snake(ak_msg_t*)	0	static
-sources/app/snake/game.cpp:157:6:void task_game(ak_msg_t*)	0	static
-sources/app/snake/game.cpp:169:1:cpp)	0	static
-sources/app/snake/game.cpp:169:1:cpp)	0	static
-sources/app/snake/game.cpp:111:6:void draw_snake()	24	static
-sources/app/snake/game.cpp:135:6:void render_game_screen()	24	static
+sources/app/snake/game.cpp:88:6:void render_game_over()	24	static
+sources/app/snake/game.cpp:31:6:void init_snake_coords()	0	static
+sources/app/snake/game.cpp:39:6:void rotate_snake_clock_wise(snake_coords&)	0	static
+sources/app/snake/game.cpp:64:6:void rotate_snake_counter_clock_wise(snake_coords&)	0	static
+sources/app/snake/game.cpp:107:6:void randomize_health()	8	static
+sources/app/snake/game.cpp:139:6:void task_draw_snake(ak_msg_t*)	0	static
+sources/app/snake/game.cpp:168:6:void task_game(ak_msg_t*)	0	static
+sources/app/snake/game.cpp:170:6:void task_game_over(ak_msg_t*)	0	static
+/home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_vector.h:510:7:std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = snake_coords; _Alloc = std::allocator<snake_coords>]	16	static
+sources/app/snake/game.cpp:180:1:cpp)	16	static
+sources/app/snake/game.cpp:180:1:cpp)	0	static
+sources/app/snake/game.cpp:112:6:void draw_snake()	32	static
+sources/app/snake/game.cpp:147:6:void render_game_screen()	24	static

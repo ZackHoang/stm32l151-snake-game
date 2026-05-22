@@ -2344,7 +2344,6 @@ Discarded input sections
                 0x0000000000000000        0x2 build_snake/mini_cpp.o
  .text.__wrap___aeabi_unwind_cpp_pr2
                 0x0000000000000000        0x2 build_snake/mini_cpp.o
- .text._Znwj    0x0000000000000000        0x4 build_snake/mini_cpp.o
  .text._Znaj    0x0000000000000000        0x4 build_snake/mini_cpp.o
  .text._ZdaPv   0x0000000000000000        0x4 build_snake/mini_cpp.o
  .text.fputc    0x0000000000000000        0xe build_snake/mini_cpp.o
@@ -2357,6 +2356,7 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build_snake/bitmap.o
  .data          0x0000000000000000        0x0 build_snake/bitmap.o
  .bss           0x0000000000000000        0x0 build_snake/bitmap.o
+ .group         0x0000000000000000        0xc build_snake/game.o
  .text          0x0000000000000000        0x0 build_snake/game.o
  .data          0x0000000000000000        0x0 build_snake/game.o
  .bss           0x0000000000000000        0x0 build_snake/game.o
@@ -2800,10 +2800,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
- .text.abort    0x0000000000000000       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
- .debug_frame   0x0000000000000000       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-fflush.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-fflush.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-fflush.o)
@@ -2913,24 +2909,14 @@ Discarded input sections
                 0x0000000000000000       0x58 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .text.__sigtramp_r
                 0x0000000000000000       0x68 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
- .text.raise    0x0000000000000000       0x5c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .text.signal   0x0000000000000000       0x54 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .text._init_signal
                 0x0000000000000000       0x38 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .text.__sigtramp
                 0x0000000000000000       0x68 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
- .debug_frame   0x0000000000000000      0x114 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
- .text._kill_r  0x0000000000000000       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
- .text._getpid_r
-                0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
- .debug_frame   0x0000000000000000       0x3c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-stdio.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-stdio.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-stdio.o)
@@ -3054,8 +3040,6 @@ Discarded input sections
                 0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .text.unlikely._ZSt24__throw_invalid_argumentPKc
                 0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
- .text.unlikely._ZSt20__throw_length_errorPKc
-                0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .text.unlikely._ZSt20__throw_out_of_rangePKc
                 0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .text._ZSt24__throw_out_of_range_fmtPKcz
@@ -3068,9 +3052,6 @@ Discarded input sections
                 0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .text.unlikely._ZSt23__throw_underflow_errorPKc
                 0x0000000000000000        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
- .debug_frame   0x0000000000000000      0x170 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(snprintf_lite.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(snprintf_lite.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(snprintf_lite.o)
@@ -3173,7 +3154,6 @@ Discarded input sections
  .text._swiclose
                 0x0000000000000000       0x1c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
  .text._close   0x0000000000000000       0x7c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
- .text._getpid  0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
  .text._sbrk    0x0000000000000000       0x4c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
  .text._swistat
                 0x0000000000000000       0x6c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
@@ -3209,25 +3189,12 @@ Discarded input sections
                 0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
  .data.supports_ext_stdout_stderr
                 0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
- .debug_frame   0x0000000000000000      0x314 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
- .text._exit    0x0000000000000000       0x14 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
- .debug_frame   0x0000000000000000       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
  .text          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
  .data          0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
  .bss           0x0000000000000000        0x0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
- .text._kill    0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
- .text._kill_shared
-                0x0000000000000000        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
- .debug_frame   0x0000000000000000       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
 
 Memory Configuration
 
@@ -3255,7 +3222,7 @@ Linker script and memory map
                 0x0000000008003000                isr_vector
                 0x00000000080030f4                . = ALIGN (0x4)
 
-.text           0x00000000080030f8     0xc96c
+.text           0x00000000080030f8     0xcb3c
                 0x00000000080030f8                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080030f8       0xec /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcpy.o)
@@ -4569,334 +4536,366 @@ Linker script and memory map
  .text.__cxa_pure_virtual
                 0x000000000800c7d4       0x1c build_snake/mini_cpp.o
                 0x000000000800c7d4                __cxa_pure_virtual
- .text._ZdlPv   0x000000000800c7f0        0x4 build_snake/mini_cpp.o
-                0x000000000800c7f0                operator delete(void*)
- .text._sbrk    0x000000000800c7f4       0x1c build_snake/mini_cpp.o
-                0x000000000800c7f4                _sbrk
+ .text._Znwj    0x000000000800c7f0        0x4 build_snake/mini_cpp.o
+                0x000000000800c7f0                operator new(unsigned int)
+ .text._ZdlPv   0x000000000800c7f4        0x4 build_snake/mini_cpp.o
+                0x000000000800c7f4                operator delete(void*)
+ .text._sbrk    0x000000000800c7f8       0x1c build_snake/mini_cpp.o
+                0x000000000800c7f8                _sbrk
  .text._Z11item_renderv
-                0x000000000800c810       0x8c build_snake/title.o
-                0x000000000800c810                item_render()
+                0x000000000800c814       0x8c build_snake/title.o
+                0x000000000800c814                item_render()
  .text._Z18change_menu_cursorP8ak_msg_t
-                0x000000000800c89c       0x40 build_snake/title.o
-                0x000000000800c89c                change_menu_cursor(ak_msg_t*)
+                0x000000000800c8a0       0x48 build_snake/title.o
+                0x000000000800c8a0                change_menu_cursor(ak_msg_t*)
  .text._Z14screen_managerv
-                0x000000000800c8dc       0x1c build_snake/title.o
-                0x000000000800c8dc                screen_manager()
+                0x000000000800c8e8       0x28 build_snake/title.o
+                0x000000000800c8e8                screen_manager()
  .text._Z13change_screenP8ak_msg_t
-                0x000000000800c8f8        0xc build_snake/title.o
-                0x000000000800c8f8                change_screen(ak_msg_t*)
+                0x000000000800c910        0xc build_snake/title.o
+                0x000000000800c910                change_screen(ak_msg_t*)
  .text._Z16handle_scr_titleP8ak_msg_t
-                0x000000000800c904        0x2 build_snake/title.o
-                0x000000000800c904                handle_scr_title(ak_msg_t*)
+                0x000000000800c91c        0x2 build_snake/title.o
+                0x000000000800c91c                handle_scr_title(ak_msg_t*)
  .text._Z10task_titleP8ak_msg_t
-                0x000000000800c906        0x2 build_snake/title.o
-                0x000000000800c906                task_title(ak_msg_t*)
+                0x000000000800c91e        0x2 build_snake/title.o
+                0x000000000800c91e                task_title(ak_msg_t*)
  .text._Z16render_game_overv
-                0x000000000800c908       0x28 build_snake/game.o
-                0x000000000800c908                render_game_over()
- .text._Z14task_game_overP8ak_msg_t
-                0x000000000800c930       0x14 build_snake/game.o
-                0x000000000800c930                task_game_over(ak_msg_t*)
+                0x000000000800c920       0x28 build_snake/game.o
+                0x000000000800c920                render_game_over()
  .text._Z17init_snake_coordsv
-                0x000000000800c944       0x3c build_snake/game.o
-                0x000000000800c944                init_snake_coords()
+                0x000000000800c948       0x20 build_snake/game.o
+                0x000000000800c948                init_snake_coords()
  .text._Z15task_draw_snakeP8ak_msg_t
-                0x000000000800c980       0x14 build_snake/game.o
-                0x000000000800c980                task_draw_snake(ak_msg_t*)
+                0x000000000800c968       0x14 build_snake/game.o
+                0x000000000800c968                task_draw_snake(ak_msg_t*)
  .text._Z9task_gameP8ak_msg_t
-                0x000000000800c994        0x2 build_snake/game.o
-                0x000000000800c994                task_game(ak_msg_t*)
- *fill*         0x000000000800c996        0x2 
+                0x000000000800c97c        0x2 build_snake/game.o
+                0x000000000800c97c                task_game(ak_msg_t*)
+ *fill*         0x000000000800c97e        0x2 
+ .text._Z14task_game_overP8ak_msg_t
+                0x000000000800c980       0x14 build_snake/game.o
+                0x000000000800c980                task_game_over(ak_msg_t*)
+ .text._ZNSt6vectorI12snake_coordsSaIS0_EEC2EjRKS1_
+                0x000000000800c994       0x68 build_snake/game.o
+                0x000000000800c994                std::vector<snake_coords, std::allocator<snake_coords> >::vector(unsigned int, std::allocator<snake_coords> const&)
+                0x000000000800c994                std::vector<snake_coords, std::allocator<snake_coords> >::vector(unsigned int, std::allocator<snake_coords> const&)
  .text.startup._GLOBAL__sub_I__Z17init_snake_coordsv
-                0x000000000800c998       0x10 build_snake/game.o
+                0x000000000800c9fc       0x18 build_snake/game.o
  .text.exit._GLOBAL__sub_D__Z17init_snake_coordsv
-                0x000000000800c9a8       0x10 build_snake/game.o
+                0x000000000800ca14       0x10 build_snake/game.o
  .text._Z10draw_snakev
-                0x000000000800c9b8       0x40 build_snake/game.o
-                0x000000000800c9b8                draw_snake()
+                0x000000000800ca24       0xb0 build_snake/game.o
+                0x000000000800ca24                draw_snake()
  .text._Z18render_game_screenv
-                0x000000000800c9f8       0x44 build_snake/game.o
-                0x000000000800c9f8                render_game_screen()
- .text.malloc   0x000000000800ca3c       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
-                0x000000000800ca3c                malloc
- .text.free     0x000000000800ca4c       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
-                0x000000000800ca4c                free
+                0x000000000800cad4       0x40 build_snake/game.o
+                0x000000000800cad4                render_game_screen()
+ .text.malloc   0x000000000800cb14       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+                0x000000000800cb14                malloc
+ .text.free     0x000000000800cb24       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+                0x000000000800cb24                free
  .text._malloc_r
-                0x000000000800ca5c      0x558 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
-                0x000000000800ca5c                _malloc_r
- .text.memcmp   0x000000000800cfb4       0x68 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
-                0x000000000800cfb4                memcmp
- .text.memset   0x000000000800d01c       0xa4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
-                0x000000000800d01c                memset
+                0x000000000800cb34      0x558 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
+                0x000000000800cb34                _malloc_r
+ .text.memcmp   0x000000000800d08c       0x68 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
+                0x000000000800d08c                memcmp
+ .text.memset   0x000000000800d0f4       0xa4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
+                0x000000000800d0f4                memset
  .text.__malloc_lock
-                0x000000000800d0c0        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
-                0x000000000800d0c0                __malloc_lock
+                0x000000000800d198        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+                0x000000000800d198                __malloc_lock
  .text.__malloc_unlock
-                0x000000000800d0cc        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
-                0x000000000800d0cc                __malloc_unlock
- .text.rand     0x000000000800d0d8       0x38 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
-                0x000000000800d0d8                rand
- .text._sbrk_r  0x000000000800d110       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
-                0x000000000800d110                _sbrk_r
- .text.strcpy   0x000000000800d134       0xbc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
-                0x000000000800d134                strcpy
- .text.strlen   0x000000000800d1f0       0x5c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x000000000800d1f0                strlen
+                0x000000000800d1a4        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+                0x000000000800d1a4                __malloc_unlock
+ .text.rand     0x000000000800d1b0       0x38 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
+                0x000000000800d1b0                rand
+ .text._sbrk_r  0x000000000800d1e8       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
+                0x000000000800d1e8                _sbrk_r
+ .text.strcpy   0x000000000800d20c       0xbc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
+                0x000000000800d20c                strcpy
+ .text.strlen   0x000000000800d2c8       0x5c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x000000000800d2c8                strlen
  .text._strtol_l.part.0
-                0x000000000800d24c      0x120 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
- .text.strtol   0x000000000800d36c       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
-                0x000000000800d36c                strtol
- .text.__errno  0x000000000800d398        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
-                0x000000000800d398                __errno
+                0x000000000800d324      0x120 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+ .text.strtol   0x000000000800d444       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+                0x000000000800d444                strtol
+ .text.__errno  0x000000000800d470        0xc /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
+                0x000000000800d470                __errno
  .text._malloc_trim_r
-                0x000000000800d3a4       0xa0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
-                0x000000000800d3a4                _malloc_trim_r
- .text._free_r  0x000000000800d444      0x200 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
-                0x000000000800d444                _free_r
+                0x000000000800d47c       0xa0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+                0x000000000800d47c                _malloc_trim_r
+ .text._free_r  0x000000000800d51c      0x200 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+                0x000000000800d51c                _free_r
  .text.__retarget_lock_acquire_recursive
-                0x000000000800d644        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
-                0x000000000800d644                __retarget_lock_acquire_recursive
+                0x000000000800d71c        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+                0x000000000800d71c                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x000000000800d648        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
-                0x000000000800d648                __retarget_lock_release_recursive
+                0x000000000800d720        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+                0x000000000800d720                __retarget_lock_release_recursive
+ .text.abort    0x000000000800d724       0x10 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
+                0x000000000800d724                abort
+ .text.raise    0x000000000800d734       0x5c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
+                0x000000000800d734                raise
+ .text._kill_r  0x000000000800d790       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
+                0x000000000800d790                _kill_r
+ .text._getpid_r
+                0x000000000800d7b8        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
+                0x000000000800d7b8                _getpid_r
+ .text.unlikely._ZSt20__throw_length_errorPKc
+                0x000000000800d7bc        0x6 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
+                0x000000000800d7bc                std::__throw_length_error(char const*)
+ *fill*         0x000000000800d7c2        0x2 
+ .text._getpid  0x000000000800d7c4        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
+                0x000000000800d7c4                _getpid
+ .text._exit    0x000000000800d7c8       0x14 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
+                0x000000000800d7c8                _exit
+ .text._kill    0x000000000800d7dc        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
+                0x000000000800d7dc                _kill
+ .text._kill_shared
+                0x000000000800d7e0        0x4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
+                0x000000000800d7e0                _kill_shared
  *(.rodata)
  *(.rodata*)
  .rodata.task_create.str1.1
-                0x000000000800d64c        0x3 build_snake/task.o
+                0x000000000800d7e4        0x3 build_snake/task.o
  .rodata.task_run.str1.1
-                0x000000000800d64f       0x25 build_snake/task.o
+                0x000000000800d7e7       0x25 build_snake/task.o
  .rodata.timer_set.str1.1
-                0x000000000800d674        0x3 build_snake/timer.o
+                0x000000000800d80c        0x3 build_snake/timer.o
  .rodata.msg_force_free.str1.1
-                0x000000000800d677        0x3 build_snake/message.o
+                0x000000000800d80f        0x3 build_snake/message.o
  .rodata.ak_malloc.str1.1
-                0x000000000800d67a        0xa build_snake/message.o
+                0x000000000800d812        0xa build_snake/message.o
  .rodata.fifo_put.str1.1
-                0x000000000800d684        0x5 build_snake/fifo.o
+                0x000000000800d81c        0x5 build_snake/fifo.o
  .rodata.xvfprintf.str1.1
-                0x000000000800d689        0xb build_snake/xprintf.o
+                0x000000000800d821        0xb build_snake/xprintf.o
                                           0xc (size before relaxing)
  .rodata.sys_dbg_cpu_dump.str1.1
-                0x000000000800d694       0x5f build_snake/sys_dbg.o
+                0x000000000800d82c       0x5f build_snake/sys_dbg.o
  .rodata.sys_dbg_stack_space_dump.str1.1
-                0x000000000800d6f3       0x2f build_snake/sys_dbg.o
+                0x000000000800d88b       0x2f build_snake/sys_dbg.o
  .rodata.sys_dbg_fatal.str1.1
-                0x000000000800d722      0x25b build_snake/sys_dbg.o
+                0x000000000800d8ba      0x25b build_snake/sys_dbg.o
                                         0x261 (size before relaxing)
  .rodata.CSWTCH.8
-                0x000000000800d97d        0xb build_snake/mbutils.o
+                0x000000000800db15        0xb build_snake/mbutils.o
  .rodata.aucCRCHi
-                0x000000000800d988      0x100 build_snake/mbmcrc.o
+                0x000000000800db20      0x100 build_snake/mbmcrc.o
  .rodata.aucCRCLo
-                0x000000000800da88      0x100 build_snake/mbmcrc.o
+                0x000000000800dc20      0x100 build_snake/mbmcrc.o
  .rodata.vMBPAssert.str1.1
-                0x000000000800db88        0x3 build_snake/mbportother.o
+                0x000000000800dd20        0x3 build_snake/mbportother.o
  .rodata.exit_critical.str1.1
-                0x000000000800db8b        0x4 build_snake/platform.o
+                0x000000000800dd23        0x4 build_snake/platform.o
  .rodata.default_handler.str1.1
-                0x000000000800db8f        0x3 build_snake/system.o
+                0x000000000800dd27        0x3 build_snake/system.o
  .rodata.sys_cfg_update_info.str1.1
-                0x000000000800db92       0x62 build_snake/sys_cfg.o
+                0x000000000800dd2a       0x62 build_snake/sys_cfg.o
                                          0x64 (size before relaxing)
  .rodata.sys_ctrl_soft_watchdog_increase_counter.str1.1
-                0x000000000800dbf4        0x5 build_snake/sys_cfg.o
+                0x000000000800dd8c        0x5 build_snake/sys_cfg.o
  .rodata.flash_transfer.str1.1
-                0x000000000800dbf9        0x4 build_snake/io_cfg.o
+                0x000000000800dd91        0x4 build_snake/io_cfg.o
  .rodata._ZL16view_scr_startupv.str1.1
-                0x000000000800dbfd       0x49 build_snake/scr_startup.o
+                0x000000000800dd95       0x49 build_snake/scr_startup.o
  .rodata._Z18scr_startup_handleP8ak_msg_t.str1.1
-                0x000000000800dc46       0x38 build_snake/scr_startup.o
+                0x000000000800ddde       0x38 build_snake/scr_startup.o
  .rodata._Z11task_systemP8ak_msg_t.str1.1
-                0x000000000800dc7e       0x23 build_snake/task_system.o
+                0x000000000800de16       0x23 build_snake/task_system.o
  .rodata.main_app.str1.1
-                0x000000000800dca1      0x27a build_snake/app.o
+                0x000000000800de39      0x27a build_snake/app.o
  .rodata._Z20task_polling_consolev.str1.1
-                0x000000000800df1b       0x31 build_snake/app.o
+                0x000000000800e0b3       0x31 build_snake/app.o
  .rodata._ZL13tones_startup
-                0x000000000800df4c       0x28 build_snake/app.o
+                0x000000000800e0e4       0x28 build_snake/app.o
  .rodata.app_info
-                0x000000000800df74        0x8 build_snake/app.o
-                0x000000000800df74                app_info
+                0x000000000800e10c        0x8 build_snake/app.o
+                0x000000000800e10c                app_info
  .rodata._Z17btn_mode_callbackPv.str1.1
-                0x000000000800df7c       0x9f build_snake/app_bsp.o
+                0x000000000800e114       0x9f build_snake/app_bsp.o
  .rodata._Z15btn_up_callbackPv.str1.1
-                0x000000000800e01b       0x99 build_snake/app_bsp.o
+                0x000000000800e1b3       0x99 build_snake/app_bsp.o
  .rodata._Z17btn_down_callbackPv.str1.1
-                0x000000000800e0b4       0x9f build_snake/app_bsp.o
+                0x000000000800e24c       0x9f build_snake/app_bsp.o
  .rodata.str1.1
-                0x000000000800e153       0xc1 build_snake/app_modbus_pull.o
+                0x000000000800e2eb       0xc1 build_snake/app_modbus_pull.o
  .rodata._Z11shell_resetPh.str1.1
-                0x000000000800e214        0x6 build_snake/shell.o
+                0x000000000800e3ac        0x6 build_snake/shell.o
  .rodata._Z10shell_helpPh.str1.1
-                0x000000000800e21a       0x24 build_snake/shell.o
+                0x000000000800e3b2       0x24 build_snake/shell.o
  .rodata._Z9shell_verPh.str1.1
-                0x000000000800e23e      0x15d build_snake/shell.o
+                0x000000000800e3d6      0x15d build_snake/shell.o
                                         0x180 (size before relaxing)
  .rodata._Z11shell_fatalPh.str1.1
-                0x000000000800e39b       0x65 build_snake/shell.o
+                0x000000000800e533       0x65 build_snake/shell.o
                                         0x229 (size before relaxing)
  .rodata._Z11shell_flashPh.str1.1
-                0x000000000800e400       0x4f build_snake/shell.o
+                0x000000000800e598       0x4f build_snake/shell.o
                                          0x55 (size before relaxing)
  .rodata._Z9shell_epsPh.str1.1
-                0x000000000800e44f       0x28 build_snake/shell.o
+                0x000000000800e5e7       0x28 build_snake/shell.o
  .rodata._Z9shell_ramPh.str1.1
-                0x000000000800e477       0x53 build_snake/shell.o
+                0x000000000800e60f       0x53 build_snake/shell.o
  .rodata._Z10shell_bootPh.str1.1
-                0x000000000800e4ca      0x166 build_snake/shell.o
+                0x000000000800e662      0x166 build_snake/shell.o
  .rodata._Z12shell_buzzerPh.str1.1
-                0x000000000800e630      0x16f build_snake/shell.o
+                0x000000000800e7c8      0x16f build_snake/shell.o
  .rodata._Z9shell_dbgPh.str1.1
-                0x000000000800e79f       0x1b build_snake/shell.o
+                0x000000000800e937       0x1b build_snake/shell.o
  .rodata._Z12shell_modbusPh.str1.1
-                0x000000000800e7ba       0x8f build_snake/shell.o
+                0x000000000800e952       0x8f build_snake/shell.o
  .rodata._Z9shell_lcdPh.str1.1
-                0x000000000800e849        0xb build_snake/shell.o
+                0x000000000800e9e1        0xb build_snake/shell.o
                                          0x54 (size before relaxing)
  .rodata.str1.1
-                0x000000000800e854       0xda build_snake/shell.o
+                0x000000000800e9ec       0xda build_snake/shell.o
                                          0xdf (size before relaxing)
  .rodata._ZL11tones_3beep
-                0x000000000800e92e       0x18 build_snake/shell.o
+                0x000000000800eac6       0x18 build_snake/shell.o
  .rodata._ZL13tones_startup
-                0x000000000800e946       0x28 build_snake/shell.o
+                0x000000000800eade       0x28 build_snake/shell.o
  .rodata._ZL20tones_merryChrismast
-                0x000000000800e96e       0xd0 build_snake/shell.o
+                0x000000000800eb06       0xd0 build_snake/shell.o
  .rodata._ZL9tones_SMB
-                0x000000000800ea3e      0x104 build_snake/shell.o
- *fill*         0x000000000800eb42        0x2 
+                0x000000000800ebd6      0x104 build_snake/shell.o
+ *fill*         0x000000000800ecda        0x2 
  .rodata.lgn_cmd_table
-                0x000000000800eb44       0xd8 build_snake/shell.o
-                0x000000000800eb44                lgn_cmd_table
+                0x000000000800ecdc       0xd8 build_snake/shell.o
+                0x000000000800ecdc                lgn_cmd_table
  .rodata._Z10task_shellP8ak_msg_t.str1.1
-                0x000000000800ec1c       0x43 build_snake/task_shell.o
+                0x000000000800edb4       0x43 build_snake/task_shell.o
  .rodata._Z7task_fwP8ak_msg_t.str1.1
-                0x000000000800ec5f      0x206 build_snake/task_fw.o
- *fill*         0x000000000800ee65        0x3 
+                0x000000000800edf7      0x206 build_snake/task_fw.o
+ *fill*         0x000000000800effd        0x3 
  .rodata.app_task_polling_table
-                0x000000000800ee68       0x18 build_snake/task_list.o
-                0x000000000800ee68                app_task_polling_table
+                0x000000000800f000       0x18 build_snake/task_list.o
+                0x000000000800f000                app_task_polling_table
  .rodata.app_task_table
-                0x000000000800ee80       0x98 build_snake/task_list.o
-                0x000000000800ee80                app_task_table
+                0x000000000800f018       0x98 build_snake/task_list.o
+                0x000000000800f018                app_task_table
  .rodata._Z7task_ifP8ak_msg_t.str1.1
-                0x000000000800ef18       0xa9 build_snake/task_if.o
+                0x000000000800f0b0       0xa9 build_snake/task_if.o
  .rodata._Z12task_uart_ifP8ak_msg_t.str1.1
-                0x000000000800efc1       0xdf build_snake/task_uart_if.o
+                0x000000000800f159       0xdf build_snake/task_uart_if.o
  .rodata._ZL11render_list
-                0x000000000800f0a0        0x8 build_snake/view_render.o
+                0x000000000800f238        0x8 build_snake/view_render.o
  .rodata._Z16scr_mng_dispatchP8ak_msg_t.str1.1
-                0x000000000800f0a8        0x8 build_snake/screen_manager.o
+                0x000000000800f240        0x8 build_snake/screen_manager.o
  .rodata._ZL4font
-                0x000000000800f0b0      0x4fb build_snake/Adafruit_GFX.o
- *fill*         0x000000000800f5ab        0x1 
+                0x000000000800f248      0x4fb build_snake/Adafruit_GFX.o
+ *fill*         0x000000000800f743        0x1 
  .rodata._ZTV12Adafruit_GFX
-                0x000000000800f5ac       0x2c build_snake/Adafruit_GFX.o
-                0x000000000800f5ac                vtable for Adafruit_GFX
+                0x000000000800f744       0x2c build_snake/Adafruit_GFX.o
+                0x000000000800f744                vtable for Adafruit_GFX
  .rodata._ZTV17Adafruit_oled_drv
-                0x000000000800f5d8       0x3c build_snake/Adafruit_oled_drv.o
-                0x000000000800f5d8                vtable for Adafruit_oled_drv
+                0x000000000800f770       0x3c build_snake/Adafruit_oled_drv.o
+                0x000000000800f770                vtable for Adafruit_oled_drv
  .rodata._Z23link_hal_reg_write_bytePFhhE.str1.1
-                0x000000000800f614        0x9 build_snake/link_hal.o
+                0x000000000800f7ac        0x9 build_snake/link_hal.o
  .rodata._ZL19fsm_link_state_initP8ak_msg_t.str1.1
-                0x000000000800f61d      0x110 build_snake/link.o
+                0x000000000800f7b5      0x110 build_snake/link.o
  .rodata._ZL23link_mac_frame_send_reqv.str1.1
-                0x000000000800f72d        0x9 build_snake/link_mac.o
+                0x000000000800f8c5        0x9 build_snake/link_mac.o
  .rodata._Z25fsm_link_mac_state_handleP8ak_msg_t.str1.1
-                0x000000000800f736        0x5 build_snake/link_mac.o
+                0x000000000800f8ce        0x5 build_snake/link_mac.o
  .rodata._Z25fsm_link_phy_state_handleP8ak_msg_t.str1.1
-                0x000000000800f73b        0x7 build_snake/link_phy.o
+                0x000000000800f8d3        0x7 build_snake/link_phy.o
  .rodata._Z13link_pdu_freeP10link_pdu_t.str1.1
-                0x000000000800f742        0x9 build_snake/link_data.o
+                0x000000000800f8da        0x9 build_snake/link_data.o
  .rodata._Z7pinModehh.str1.1
-                0x000000000800f74b        0x3 build_snake/wiring_digital.o
- *fill*         0x000000000800f74e        0x2 
+                0x000000000800f8e3        0x3 build_snake/wiring_digital.o
+ *fill*         0x000000000800f8e6        0x2 
  .rodata._ZTV14HardwareSerial
-                0x000000000800f750       0x24 build_snake/HardwareSerial.o
-                0x000000000800f750                vtable for HardwareSerial
+                0x000000000800f8e8       0x24 build_snake/HardwareSerial.o
+                0x000000000800f8e8                vtable for HardwareSerial
  .rodata._ZTV7TwoWire
-                0x000000000800f774       0x20 build_snake/Wire.o
-                0x000000000800f774                vtable for TwoWire
+                0x000000000800f90c       0x20 build_snake/Wire.o
+                0x000000000800f90c                vtable for TwoWire
  .rodata.__cxa_pure_virtual.str1.1
-                0x000000000800f794        0x4 build_snake/mini_cpp.o
+                0x000000000800f92c        0x4 build_snake/mini_cpp.o
  .rodata._Z11item_renderv.str1.1
-                0x000000000800f798       0x14 build_snake/title.o
+                0x000000000800f930       0x14 build_snake/title.o
+ .rodata._Z18change_menu_cursorP8ak_msg_t.str1.1
+                0x000000000800f944       0x13 build_snake/title.o
  .rodata.image_arrow_right_bits
-                0x000000000800f7ac       0x10 build_snake/bitmap.o
-                0x000000000800f7ac                image_arrow_right_bits
+                0x000000000800f957       0x10 build_snake/bitmap.o
+                0x000000000800f957                image_arrow_right_bits
  .rodata.image_cry_dolph_bits
-                0x000000000800f7bc      0x16c build_snake/bitmap.o
-                0x000000000800f7bc                image_cry_dolph_bits
+                0x000000000800f967      0x16c build_snake/bitmap.o
+                0x000000000800f967                image_cry_dolph_bits
  .rodata.image_health
-                0x000000000800f928        0x8 build_snake/bitmap.o
-                0x000000000800f928                image_health
- .rodata._Z17init_snake_coordsv.str1.1
-                0x000000000800f930       0x2d build_snake/game.o
- *fill*         0x000000000800f95d        0x3 
+                0x000000000800fad3        0x8 build_snake/bitmap.o
+                0x000000000800fad3                image_health
+ .rodata._ZNSt6vectorI12snake_coordsSaIS0_EEC2EjRKS1_.str1.1
+                0x000000000800fadb       0x31 build_snake/game.o
+ .rodata._Z10draw_snakev.str1.1
+                0x000000000800fb0c       0x23 build_snake/game.o
+ *fill*         0x000000000800fb2f        0x1 
  .rodata._ctype_
-                0x000000000800f960      0x101 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-ctype_.o)
-                0x000000000800f960                _ctype_
+                0x000000000800fb30      0x101 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-ctype_.o)
+                0x000000000800fb30                _ctype_
  *(.glue_7)
- .glue_7        0x000000000800fa61        0x0 linker stubs
+ .glue_7        0x000000000800fc31        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800fa61        0x0 linker stubs
+ .glue_7t       0x000000000800fc31        0x0 linker stubs
  *(.init)
  *(.fini)
-                0x000000000800fa64                . = ALIGN (0x4)
- *fill*         0x000000000800fa61        0x3 
-                0x000000000800fa64                _etext = .
+                0x000000000800fc34                . = ALIGN (0x4)
+ *fill*         0x000000000800fc31        0x3 
+                0x000000000800fc34                _etext = .
 
-.vfp11_veneer   0x000000000800fa64        0x0
- .vfp11_veneer  0x000000000800fa64        0x0 linker stubs
+.vfp11_veneer   0x000000000800fc34        0x0
+ .vfp11_veneer  0x000000000800fc34        0x0 linker stubs
 
-.v4_bx          0x000000000800fa64        0x0
- .v4_bx         0x000000000800fa64        0x0 linker stubs
+.v4_bx          0x000000000800fc34        0x0
+ .v4_bx         0x000000000800fc34        0x0 linker stubs
 
-.iplt           0x000000000800fa64        0x0
- .iplt          0x000000000800fa64        0x0 build_snake/task.o
+.iplt           0x000000000800fc34        0x0
+ .iplt          0x000000000800fc34        0x0 build_snake/task.o
 
-.rel.dyn        0x000000000800fa64        0x0
- .rel.iplt      0x000000000800fa64        0x0 build_snake/task.o
+.rel.dyn        0x000000000800fc34        0x0
+ .rel.iplt      0x000000000800fc34        0x0 build_snake/task.o
 
-.ARM.exidx      0x000000000800fa64        0x8
- .ARM.exidx     0x000000000800fa64        0x8 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+.ARM.exidx      0x000000000800fc34        0x8
+ .ARM.exidx     0x000000000800fc34        0x8 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
 
-.preinit_array  0x000000000800fa6c        0x0
-                0x000000000800fa6c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000800fc3c        0x0
+                0x000000000800fc3c                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  *(.preinit_array*)
-                0x000000000800fa6c                PROVIDE (__preinit_array_end = .)
+                0x000000000800fc3c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x000000000800fa6c       0x18
-                0x000000000800fa6c                PROVIDE (__init_array_start = .)
+.init_array     0x000000000800fc3c       0x18
+                0x000000000800fc3c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800fa6c        0x4 build_snake/scr_idle.o
- .init_array    0x000000000800fa70        0x4 build_snake/view_render.o
- .init_array    0x000000000800fa74        0x4 build_snake/HardwareSerial2.o
- .init_array    0x000000000800fa78        0x4 build_snake/SPI.o
- .init_array    0x000000000800fa7c        0x4 build_snake/Wire.o
- .init_array    0x000000000800fa80        0x4 build_snake/game.o
-                0x000000000800fa84                PROVIDE (__init_array_end = .)
+ .init_array    0x000000000800fc3c        0x4 build_snake/scr_idle.o
+ .init_array    0x000000000800fc40        0x4 build_snake/view_render.o
+ .init_array    0x000000000800fc44        0x4 build_snake/HardwareSerial2.o
+ .init_array    0x000000000800fc48        0x4 build_snake/SPI.o
+ .init_array    0x000000000800fc4c        0x4 build_snake/Wire.o
+ .init_array    0x000000000800fc50        0x4 build_snake/game.o
+                0x000000000800fc54                PROVIDE (__init_array_end = .)
 
-.fini_array     0x000000000800fa84        0xc
+.fini_array     0x000000000800fc54        0xc
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(.fini_array*)
- .fini_array    0x000000000800fa84        0x4 build_snake/scr_idle.o
- .fini_array    0x000000000800fa88        0x4 build_snake/view_render.o
- .fini_array    0x000000000800fa8c        0x4 build_snake/game.o
+ .fini_array    0x000000000800fc54        0x4 build_snake/scr_idle.o
+ .fini_array    0x000000000800fc58        0x4 build_snake/view_render.o
+ .fini_array    0x000000000800fc5c        0x4 build_snake/game.o
  *(SORT_BY_NAME(.fini_array.*))
                 [!provide]                        PROVIDE (__fini_array_end = .)
 
-.end_flash      0x000000000800fa90        0x0
-                0x000000000800fa90                _end_flash = .
+.end_flash      0x000000000800fc60        0x0
+                0x000000000800fc60                _end_flash = .
 
 .start_ram      0x0000000020000000        0x0
                 0x0000000020000000                _start_ram = .
 
-.data           0x0000000020000000      0xa30 load address 0x000000000800fa90
+.data           0x0000000020000000      0xa30 load address 0x000000000800fc60
                 0x0000000020000000                _data = .
-                0x000000000800fa90                _ldata = LOADADDR (.data)
+                0x000000000800fc60                _ldata = LOADADDR (.data)
  *(vtable)
  *(.data)
  *(.data*)
@@ -4979,10 +4978,10 @@ Linker script and memory map
  *(.ram_func*)
                 0x0000000020000a30                _edata = .
 
-.igot.plt       0x0000000020000a30        0x0 load address 0x00000000080104c0
+.igot.plt       0x0000000020000a30        0x0 load address 0x0000000008010690
  .igot.plt      0x0000000020000a30        0x0 build_snake/task.o
 
-.bss            0x0000000020000a30     0x2248 load address 0x00000000080104c0
+.bss            0x0000000020000a30     0x2248 load address 0x0000000008010690
                 0x0000000020000a30                _bss = .
  *(.bss)
  *(.bss*)
@@ -5298,14 +5297,14 @@ Linker script and memory map
  *(COMMON)
                 0x0000000020002c78                _ebss = .
 
-.heap           0x0000000020002c78      0x800 load address 0x0000000008012708
+.heap           0x0000000020002c78      0x800 load address 0x00000000080128d8
                 0x0000000020002c78                __heap_start__ = .
                 0x0000000020003478                . = (. + HEAP_SIZE)
  *fill*         0x0000000020002c78      0x800 
                 0x0000000020003478                . = ALIGN (0x4)
                 0x0000000020003478                __heap_end__ = .
 
-.non_clear_ram  0x0000000020003478        0x4 load address 0x0000000008012f08
+.non_clear_ram  0x0000000020003478        0x4 load address 0x00000000080130d8
                 0x0000000020003478                _non_clear_ram = .
  *(.non_clear_ram)
  .non_clear_ram
@@ -5460,7 +5459,7 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/
 LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libg.a
 LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000    0x73940
+.debug_info     0x0000000000000000    0x74643
  .debug_info    0x0000000000000000      0x226 build_snake/fsm.o
  .debug_info    0x0000000000000226     0x1154 build_snake/task.o
  .debug_info    0x000000000000137a      0xb23 build_snake/timer.o
@@ -5542,11 +5541,11 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_info    0x000000000006207a     0x46e6 build_snake/Wire.o
  .debug_info    0x0000000000066760     0x2b50 build_snake/twi.o
  .debug_info    0x00000000000692b0     0x15ef build_snake/mini_cpp.o
- .debug_info    0x000000000006a89f     0x279d build_snake/title.o
- .debug_info    0x000000000006d03c     0x20cd build_snake/bitmap.o
- .debug_info    0x000000000006f109     0x4837 build_snake/game.o
+ .debug_info    0x000000000006a89f     0x27d3 build_snake/title.o
+ .debug_info    0x000000000006d072     0x20cd build_snake/bitmap.o
+ .debug_info    0x000000000006f13f     0x5504 build_snake/game.o
 
-.debug_abbrev   0x0000000000000000    0x101ba
+.debug_abbrev   0x0000000000000000    0x102a8
  .debug_abbrev  0x0000000000000000       0xdc build_snake/fsm.o
  .debug_abbrev  0x00000000000000dc      0x3c6 build_snake/task.o
  .debug_abbrev  0x00000000000004a2      0x324 build_snake/timer.o
@@ -5628,11 +5627,11 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_abbrev  0x000000000000e1b2      0x769 build_snake/Wire.o
  .debug_abbrev  0x000000000000e91b      0x46b build_snake/twi.o
  .debug_abbrev  0x000000000000ed86      0x461 build_snake/mini_cpp.o
- .debug_abbrev  0x000000000000f1e7      0x4c4 build_snake/title.o
- .debug_abbrev  0x000000000000f6ab      0x244 build_snake/bitmap.o
- .debug_abbrev  0x000000000000f8ef      0x8cb build_snake/game.o
+ .debug_abbrev  0x000000000000f1e7      0x4db build_snake/title.o
+ .debug_abbrev  0x000000000000f6c2      0x244 build_snake/bitmap.o
+ .debug_abbrev  0x000000000000f906      0x9a2 build_snake/game.o
 
-.debug_loc      0x0000000000000000    0x1895a
+.debug_loc      0x0000000000000000    0x18fd5
  .debug_loc     0x0000000000000000       0x4a build_snake/fsm.o
  .debug_loc     0x000000000000004a      0x73c build_snake/task.o
  .debug_loc     0x0000000000000786      0x379 build_snake/timer.o
@@ -5708,10 +5707,10 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_loc     0x0000000000017778      0x935 build_snake/Wire.o
  .debug_loc     0x00000000000180ad      0x418 build_snake/twi.o
  .debug_loc     0x00000000000184c5       0xfd build_snake/mini_cpp.o
- .debug_loc     0x00000000000185c2       0x32 build_snake/title.o
- .debug_loc     0x00000000000185f4      0x366 build_snake/game.o
+ .debug_loc     0x00000000000185c2       0x64 build_snake/title.o
+ .debug_loc     0x0000000000018626      0x9af build_snake/game.o
 
-.debug_aranges  0x0000000000000000     0x23a0
+.debug_aranges  0x0000000000000000     0x23a8
  .debug_aranges
                 0x0000000000000000       0x20 build_snake/fsm.o
  .debug_aranges
@@ -5879,9 +5878,9 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_aranges
                 0x0000000000002310       0x18 build_snake/bitmap.o
  .debug_aranges
-                0x0000000000002328       0x78 build_snake/game.o
+                0x0000000000002328       0x80 build_snake/game.o
 
-.debug_ranges   0x0000000000000000     0x2cf0
+.debug_ranges   0x0000000000000000     0x2e80
  .debug_ranges  0x0000000000000000       0x10 build_snake/fsm.o
  .debug_ranges  0x0000000000000010       0xf0 build_snake/task.o
  .debug_ranges  0x0000000000000100       0x90 build_snake/timer.o
@@ -5960,10 +5959,10 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_ranges  0x0000000000002a70       0xf0 build_snake/Wire.o
  .debug_ranges  0x0000000000002b60       0x58 build_snake/twi.o
  .debug_ranges  0x0000000000002bb8       0x50 build_snake/mini_cpp.o
- .debug_ranges  0x0000000000002c08       0x30 build_snake/title.o
- .debug_ranges  0x0000000000002c38       0xb8 build_snake/game.o
+ .debug_ranges  0x0000000000002c08       0x48 build_snake/title.o
+ .debug_ranges  0x0000000000002c50      0x230 build_snake/game.o
 
-.debug_line     0x0000000000000000    0x24806
+.debug_line     0x0000000000000000    0x24a78
  .debug_line    0x0000000000000000      0x144 build_snake/fsm.o
  .debug_line    0x0000000000000144      0x9a5 build_snake/task.o
  .debug_line    0x0000000000000ae9      0x575 build_snake/timer.o
@@ -6045,11 +6044,11 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_line    0x0000000000021d9f      0x97a build_snake/Wire.o
  .debug_line    0x0000000000022719      0x7e3 build_snake/twi.o
  .debug_line    0x0000000000022efc      0x561 build_snake/mini_cpp.o
- .debug_line    0x000000000002345d      0x613 build_snake/title.o
- .debug_line    0x0000000000023a70      0x3ad build_snake/bitmap.o
- .debug_line    0x0000000000023e1d      0x9e9 build_snake/game.o
+ .debug_line    0x000000000002345d      0x641 build_snake/title.o
+ .debug_line    0x0000000000023a9e      0x3ad build_snake/bitmap.o
+ .debug_line    0x0000000000023e4b      0xc2d build_snake/game.o
 
-.debug_str      0x0000000000000000    0x19680
+.debug_str      0x0000000000000000    0x19c27
  .debug_str     0x0000000000000000      0x1a9 build_snake/fsm.o
                                         0x23d (size before relaxing)
  .debug_str     0x00000000000001a9      0x5f9 build_snake/task.o
@@ -6146,78 +6145,78 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
                                        0x16e0 (size before relaxing)
  .debug_str     0x000000000000b56a       0xa8 build_snake/task_system.o
                                         0x619 (size before relaxing)
- .debug_str     0x000000000000b612     0x6976 build_snake/app.o
+ .debug_str     0x000000000000b612     0x696f build_snake/app.o
                                        0x8917 (size before relaxing)
- .debug_str     0x0000000000011f88       0x19 build_snake/app_data.o
+ .debug_str     0x0000000000011f81       0x19 build_snake/app_data.o
                                         0x3ac (size before relaxing)
- .debug_str     0x0000000000011fa1       0x22 build_snake/app_non_clear_ram.o
+ .debug_str     0x0000000000011f9a       0x22 build_snake/app_non_clear_ram.o
                                         0x3cc (size before relaxing)
- .debug_str     0x0000000000011fc3       0xc9 build_snake/app_bsp.o
+ .debug_str     0x0000000000011fbc       0xc9 build_snake/app_bsp.o
                                         0x7f8 (size before relaxing)
- .debug_str     0x000000000001208c      0x3f9 build_snake/app_modbus_pull.o
+ .debug_str     0x0000000000012085      0x3f9 build_snake/app_modbus_pull.o
                                         0x98d (size before relaxing)
- .debug_str     0x0000000000012485      0x3cc build_snake/shell.o
+ .debug_str     0x000000000001247e      0x3cc build_snake/shell.o
                                        0x1a2a (size before relaxing)
- .debug_str     0x0000000000012851       0x49 build_snake/task_shell.o
+ .debug_str     0x000000000001284a       0x49 build_snake/task_shell.o
                                         0x674 (size before relaxing)
- .debug_str     0x000000000001289a       0x3b build_snake/task_life.o
+ .debug_str     0x0000000000012893       0x3b build_snake/task_life.o
                                         0x540 (size before relaxing)
- .debug_str     0x00000000000128d5      0x356 build_snake/task_fw.o
+ .debug_str     0x00000000000128ce      0x356 build_snake/task_fw.o
                                         0xeb6 (size before relaxing)
- .debug_str     0x0000000000012c2b       0x1a build_snake/task_list.o
+ .debug_str     0x0000000000012c24       0x1a build_snake/task_list.o
                                         0x608 (size before relaxing)
- .debug_str     0x0000000000012c45       0x75 build_snake/task_display.o
+ .debug_str     0x0000000000012c3e       0x75 build_snake/task_display.o
                                        0x1273 (size before relaxing)
- .debug_str     0x0000000000012cba       0x67 build_snake/task_if.o
+ .debug_str     0x0000000000012cb3       0x67 build_snake/task_if.o
                                         0x7a7 (size before relaxing)
- .debug_str     0x0000000000012d21       0x45 build_snake/task_rf24_if.o
+ .debug_str     0x0000000000012d1a       0x45 build_snake/task_rf24_if.o
                                         0x48c (size before relaxing)
- .debug_str     0x0000000000012d66      0x14a build_snake/task_uart_if.o
+ .debug_str     0x0000000000012d5f      0x14a build_snake/task_uart_if.o
                                         0x823 (size before relaxing)
- .debug_str     0x0000000000012eb0       0x38 build_snake/task_dbg.o
+ .debug_str     0x0000000000012ea9       0x38 build_snake/task_dbg.o
                                         0x47f (size before relaxing)
- .debug_str     0x0000000000012ee8      0x1b9 build_snake/view_render.o
+ .debug_str     0x0000000000012ee1      0x1b9 build_snake/view_render.o
                                        0x10fc (size before relaxing)
- .debug_str     0x00000000000130a1       0xfe build_snake/screen_manager.o
+ .debug_str     0x000000000001309a       0xfe build_snake/screen_manager.o
                                        0x1064 (size before relaxing)
- .debug_str     0x000000000001319f      0x78e build_snake/Adafruit_GFX.o
+ .debug_str     0x0000000000013198      0x78e build_snake/Adafruit_GFX.o
                                        0x190f (size before relaxing)
- .debug_str     0x000000000001392d      0x644 build_snake/Adafruit_oled_drv.o
+ .debug_str     0x0000000000013926      0x644 build_snake/Adafruit_oled_drv.o
                                        0x1524 (size before relaxing)
- .debug_str     0x0000000000013f71       0x21 build_snake/eeprom.o
+ .debug_str     0x0000000000013f6a       0x21 build_snake/eeprom.o
                                         0x415 (size before relaxing)
- .debug_str     0x0000000000013f92       0xdd build_snake/link_hal.o
+ .debug_str     0x0000000000013f8b       0xdd build_snake/link_hal.o
                                         0x4ea (size before relaxing)
- .debug_str     0x000000000001406f      0x3e4 build_snake/link.o
+ .debug_str     0x0000000000014068      0x3e4 build_snake/link.o
                                         0xd02 (size before relaxing)
- .debug_str     0x0000000000014453      0x556 build_snake/link_mac.o
+ .debug_str     0x000000000001444c      0x556 build_snake/link_mac.o
                                         0xfae (size before relaxing)
- .debug_str     0x00000000000149a9      0x46a build_snake/link_phy.o
+ .debug_str     0x00000000000149a2      0x46a build_snake/link_phy.o
                                         0xe85 (size before relaxing)
- .debug_str     0x0000000000014e13       0xe9 build_snake/link_data.o
+ .debug_str     0x0000000000014e0c       0xe9 build_snake/link_data.o
                                         0x5ef (size before relaxing)
- .debug_str     0x0000000000014efc       0x56 build_snake/wiring_digital.o
+ .debug_str     0x0000000000014ef5       0x56 build_snake/wiring_digital.o
                                         0xf3c (size before relaxing)
- .debug_str     0x0000000000014f52      0x330 build_snake/Print.o
+ .debug_str     0x0000000000014f4b      0x330 build_snake/Print.o
                                        0x1110 (size before relaxing)
- .debug_str     0x0000000000015282     0x1122 build_snake/HardwareSerial.o
+ .debug_str     0x000000000001527b     0x1122 build_snake/HardwareSerial.o
                                        0x1fe5 (size before relaxing)
- .debug_str     0x00000000000163a4       0xc1 build_snake/HardwareSerial2.o
+ .debug_str     0x000000000001639d       0xc1 build_snake/HardwareSerial2.o
                                        0x1fe1 (size before relaxing)
- .debug_str     0x0000000000016465      0x104 build_snake/SPI.o
+ .debug_str     0x000000000001645e      0x104 build_snake/SPI.o
                                         0x9c3 (size before relaxing)
- .debug_str     0x0000000000016569      0x6d5 build_snake/Wire.o
+ .debug_str     0x0000000000016562      0x6d5 build_snake/Wire.o
                                        0x2466 (size before relaxing)
- .debug_str     0x0000000000016c3e       0xee build_snake/twi.o
+ .debug_str     0x0000000000016c37       0xee build_snake/twi.o
                                        0x13b9 (size before relaxing)
- .debug_str     0x0000000000016d2c      0x14b build_snake/mini_cpp.o
+ .debug_str     0x0000000000016d25      0x14b build_snake/mini_cpp.o
                                         0x962 (size before relaxing)
- .debug_str     0x0000000000016e77      0x146 build_snake/title.o
-                                       0x145d (size before relaxing)
- .debug_str     0x0000000000016fbd       0x3f build_snake/bitmap.o
+ .debug_str     0x0000000000016e70      0x158 build_snake/title.o
+                                       0x148e (size before relaxing)
+ .debug_str     0x0000000000016fc8       0x3f build_snake/bitmap.o
                                         0xd5f (size before relaxing)
- .debug_str     0x0000000000016ffc     0x2684 build_snake/game.o
-                                       0x420b (size before relaxing)
+ .debug_str     0x0000000000017007     0x2c20 build_snake/game.o
+                                       0x485f (size before relaxing)
 
 .comment        0x0000000000000000       0x49
  .comment       0x0000000000000000       0x49 build_snake/fsm.o
@@ -6513,27 +6512,41 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .ARM.attributes
                 0x000000000000119d       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-reent.o)
  .ARM.attributes
-                0x00000000000011ca       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                0x00000000000011ca       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
  .ARM.attributes
-                0x00000000000011e7       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                0x00000000000011f7       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
  .ARM.attributes
-                0x0000000000001204       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x0000000000001224       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
  .ARM.attributes
-                0x0000000000001221       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
+                0x0000000000001251       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
  .ARM.attributes
-                0x000000000000123e       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+                0x000000000000127e       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x000000000000125b       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+                0x000000000000129b       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x0000000000001278       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+                0x00000000000012b8       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x0000000000001295       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000000012d5       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x00000000000012b2       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x00000000000012f2       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x00000000000012df       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000000000000130f       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .ARM.attributes
+                0x000000000000132c       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x0000000000001349       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000001366       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x0000000000001393       0x1d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000000013b0       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
+ .ARM.attributes
+                0x00000000000013dd       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
+ .ARM.attributes
+                0x000000000000140a       0x2d /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
 
-.debug_frame    0x0000000000000000     0x6104
+.debug_frame    0x0000000000000000     0x6780
  .debug_frame   0x0000000000000000       0x20 build_snake/fsm.o
  .debug_frame   0x0000000000000020      0x240 build_snake/task.o
  .debug_frame   0x0000000000000260       0xf0 build_snake/timer.o
@@ -6612,29 +6625,36 @@ LOAD /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-no
  .debug_frame   0x000000000000544c      0x21c build_snake/Wire.o
  .debug_frame   0x0000000000005668      0x118 build_snake/twi.o
  .debug_frame   0x0000000000005780      0x100 build_snake/mini_cpp.o
- .debug_frame   0x0000000000005880       0x7c build_snake/title.o
- .debug_frame   0x00000000000058fc      0x108 build_snake/game.o
- .debug_frame   0x0000000000005a04       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
- .debug_frame   0x0000000000005a34       0x4c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
- .debug_frame   0x0000000000005a80       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
- .debug_frame   0x0000000000005aa8       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
- .debug_frame   0x0000000000005ad4       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
- .debug_frame   0x0000000000005b04       0x3c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
- .debug_frame   0x0000000000005b40       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000005b6c       0x34 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcmp.o)
- .debug_frame   0x0000000000005ba0       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
- .debug_frame   0x0000000000005bc0       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
- .debug_frame   0x0000000000005be0       0x90 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
- .debug_frame   0x0000000000005c70       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
- .debug_frame   0x0000000000005c90       0x8c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
- .debug_frame   0x0000000000005d1c       0xb0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
- .debug_frame   0x0000000000005dcc       0x64 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-reent.o)
- .debug_frame   0x0000000000005e30       0xac /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x0000000000005edc       0x50 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x0000000000005f2c       0xc4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x0000000000005ff0       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x0000000000006010       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x0000000000006034       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
- .debug_frame   0x0000000000006058       0x4c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x00000000000060a4       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000000000060d0       0x34 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000005880       0x8c build_snake/title.o
+ .debug_frame   0x000000000000590c      0x120 build_snake/game.o
+ .debug_frame   0x0000000000005a2c       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-malloc.o)
+ .debug_frame   0x0000000000005a5c       0x4c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mallocr.o)
+ .debug_frame   0x0000000000005aa8       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000005ad0       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000005afc       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000005b2c       0x3c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-rand.o)
+ .debug_frame   0x0000000000005b68       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000005b94       0x34 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcmp.o)
+ .debug_frame   0x0000000000005bc8       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000005be8       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strlen-stub.o)
+ .debug_frame   0x0000000000005c08       0x90 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-strtol.o)
+ .debug_frame   0x0000000000005c98       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-errno.o)
+ .debug_frame   0x0000000000005cb8       0x8c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-freer.o)
+ .debug_frame   0x0000000000005d44       0xb0 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-lock.o)
+ .debug_frame   0x0000000000005df4       0x64 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-reent.o)
+ .debug_frame   0x0000000000005e58       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-abort.o)
+ .debug_frame   0x0000000000005e80      0x114 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signal.o)
+ .debug_frame   0x0000000000005f94       0x3c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libc.a(lib_a-signalr.o)
+ .debug_frame   0x0000000000005fd0      0x170 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/libstdc++_nano.a(functexcept.o)
+ .debug_frame   0x0000000000006140       0xac /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000000061ec       0x50 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x000000000000623c       0xc4 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000000000006300       0x20 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000000000006320       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x0000000000006344       0x24 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_frame   0x0000000000006368       0x4c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00000000000063b4       0x2c /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000063e0       0x34 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000006414      0x314 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(syscalls.o)
+ .debug_frame   0x0000000000006728       0x28 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_exit.o)
+ .debug_frame   0x0000000000006750       0x30 /home/vietanh/workspace/tools/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/lib/thumb/v7-m/nofp/librdpmon.a(_kill.o)
