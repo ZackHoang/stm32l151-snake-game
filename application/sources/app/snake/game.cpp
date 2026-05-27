@@ -1,89 +1,13 @@
 #include "game.h"
-#include <math.h>
-#include <vector>
 
-using namespace std;
-
-enum Direction
-{
-	UP,
-	RIGHT,
-	DOWN,
-	LEFT
-};
-
-struct snake_coords {
-	uint32_t x;
-	uint32_t y;
-	Direction dir;
-};
-
-struct {
-	uint8_t x;
-	uint8_t y;
-} health_pos;
-
-// static int score = 0;
-static uint8_t snake_pos = 50;
-static uint8_t snake_length = 50;
-static vector<snake_coords> snake_coordinates(snake_length);
-
-void init_snake_coords() {
-	for (uint8_t i = 0; i <= snake_length; i++) {
-		snake_coordinates[i] = {i, 10, RIGHT};
-		// xprintf("\nsnake_coordinates[%d]=>x, y, dir: %d %d %d\n", i, snake_coordinates[i].x, snake_coordinates[i].y, snake_coordinates[i].dir);
-	}
-	return;
-}
-
-void rotate_snake_clock_wise(snake_coords &coord) {
-	switch(coord.dir) {
-		case UP: {
-			coord.dir = RIGHT;
-			coord.x += 1;
-			break;
-		}
-		case RIGHT: {
-			coord.dir = DOWN;
-			coord.y -= 1;
-			break;
-		}
-		case DOWN: {
-			coord.dir = LEFT;
-			coord.x -= 1;
-			break;
-		}
-		case LEFT: {
-			coord.dir = UP;
-			coord.y -= 1;
-			break;
-		}
-	}
-}
-
-void rotate_snake_counter_clock_wise(snake_coords &coord) {
-	switch (coord.dir) {
-		case UP: {
-			coord.dir = LEFT;
-			coord.x -= 1;
-			break;
-		}
-		case RIGHT: {
-			coord.dir = UP;
-			coord.y -= 1;
-		}
-		case DOWN: {
-			coord.dir = RIGHT;
-			coord.x += 1;
-		};
-		case LEFT: {
-			coord.dir = DOWN;
-			coord.y += 1;
-		}
-		default:
-			break;
-	}
-}
+static uint8_t x = 20;
+static uint8_t y = 20;
+static uint8_t x_speed = 3;
+static uint8_t y_speed = 3;
+static uint8_t x_bar = 54;
+static uint8_t x2_bar = 74;
+static uint8_t y_bar = 60;
+static uint8_t score = 0;
 
 void render_game_over()
 {
@@ -104,41 +28,74 @@ view_screen_t scr_game_over = {
 		.focus_item = 0,
 };
 
-void randomize_health() {
-	health_pos.x = rand() % 129;
-	health_pos.y = rand() % 65;
+void touch_bar() {
+	if (y + BALL_RADIUS >= y_bar && y - BALL_RADIUS <= y_bar + BAR_HEIGHT && x >= x_bar && x <= x_bar + BAR_WIDTH) {
+		score++;
+	}
 }
 
-void draw_snake() {
-	// if (snake_coordinates.back().x > 128) {
-	// 	SCREEN_TRAN(task_game_over, &scr_game_over);
-	// }
-	for (int i = 0; i <= (uint8_t)snake_coordinates.size(); i++)
-	{
-		view_render.drawPixel(snake_coordinates[i].x, snake_coordinates[i].y, BLACK);
+void draw_game() {
+	view_render.drawRect(x_bar, y_bar, BAR_WIDTH, BAR_HEIGHT, WHITE);
+	view_render.drawCircle(x, y, BALL_RADIUS, WHITE);
+	view_render.setCursor(80, 20);
+	view_render.setTextSize(1);
+	view_render.print(score);
+	x += x_speed;
+	y += y_speed;
+	if (x > WIDTH - BALL_RADIUS || x < BALL_RADIUS) {
+		x_speed = -x_speed;
 	}
-	for (int i = 0; i <= (uint8_t)snake_coordinates.size(); i++) {
-		snake_coordinates[i].x += 5;
+	if (y > HEIGHT - BALL_RADIUS || y < BALL_RADIUS || (y + BALL_RADIUS >= y_bar && y - BALL_RADIUS <= y_bar + BAR_HEIGHT && x >= x_bar && x <= x_bar + BAR_WIDTH)) {
+		y_speed = -y_speed;
+		touch_bar();
 	}
-	for (int i = 0; i <= (uint8_t)snake_coordinates.size(); i++) {
-		view_render.drawPixel(snake_coordinates[i].x, snake_coordinates[i].y, WHITE);
-		xprintf("coordinates at [%d], x: %d, y: %d\n", i, snake_coordinates[i].x, snake_coordinates[i].y);
+}
+
+void move_bar_right() {
+	if (x2_bar < 110) {
+		x_bar += 5;
+		x2_bar += 5;
+		xprintf("x_bar: %d\nx2_bar: %d\n\n", x_bar, x2_bar);
+	}
+}
+
+void move_bar_left() {
+	if (x_bar > 10) {
+		x_bar -= 5;
+		x2_bar -= 5;
+		xprintf("x_bar: %d\nx2_bar: %d\n\n", x_bar, x2_bar);
 	}
 }
 
 void task_draw_snake(ak_msg_t* msg) {
 	switch (msg->sig) {
-		case (CHANGE_POS): {
-			view_render_screen(&scr_game);
+		case (CHANGE_POS):
+			{
+				view_render_screen(&scr_game);
+			}
+	}
+}
+
+void task_move_bar_right(ak_msg_t* msg) {
+	switch (msg->sig) {
+		case (MOVE_RIGHT): {
+			move_bar_right();
+		}
+	}
+}
+
+void task_move_bar_left(ak_msg_t* msg) {
+	switch (msg->sig) {
+		case (MOVE_LEFT): {
+			move_bar_left();
 		}
 	}
 }
 
 void render_game_screen()
 {
-	draw_snake();
-	timer_set(TASK_UPDATE_POS, CHANGE_POS, 1000, TIMER_PERIODIC);
-	view_render.drawBitmap(20, 50, image_health, health_pos.x, health_pos.y, WHITE);
+	draw_game();
+	timer_set(TASK_UPDATE_POS, CHANGE_POS, 100, TIMER_PERIODIC);
 }
 
 view_dynamic_t dyn_view_scr_game = {

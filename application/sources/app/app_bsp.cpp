@@ -45,6 +45,7 @@ void btn_up_callback(void* b) {
 	case BUTTON_SW_STATE_PRESSED: {
 		APP_DBG("[btn_up_callback] BUTTON_SW_STATE_PRESSED\n");
 		task_post_pure_msg(TASK_CHANGE_CURSOR, CURSOR_UP);
+		task_post_pure_msg(TASK_MOVE_BAR_RIGHT, MOVE_RIGHT);
 	}
 		break;
 
@@ -70,6 +71,7 @@ void btn_down_callback(void* b) {
 	case BUTTON_SW_STATE_PRESSED: {
 		APP_DBG("[btn_down_callback] BUTTON_SW_STATE_PRESSED\n");
 		task_post_pure_msg(TASK_CHANGE_CURSOR, CURSOR_DOWN);
+		task_post_pure_msg(TASK_MOVE_BAR_LEFT, MOVE_LEFT);
 	}
 		break;
 

@@ -33,6 +33,9 @@ enum {
 	TASK_UPDATE_POS,
 	TASK_GAME_OVER,
 
+	TASK_MOVE_BAR_RIGHT,
+	TASK_MOVE_BAR_LEFT,
+
 #if defined(TASK_ZIGBEE_EN)
 	AC_TASK_ZIGBEE_ID,
 #endif
@@ -96,6 +99,9 @@ extern void change_menu_cursor(ak_msg_t *);
 extern void change_screen(ak_msg_t *);
 extern void task_draw_snake(ak_msg_t *);
 extern void task_game_over(ak_msg_t *);
+extern void task_move_bar_right(ak_msg_t *);
+extern void task_move_bar_left(ak_msg_t *);
+
 
 /* LINK TASK */
 extern void task_link_phy(ak_msg_t*);

@@ -11,14 +11,12 @@ void change_menu_cursor(ak_msg_t* msg) {
 			if (curr_opt > 0) {
 				curr_opt--;
 				curr_screen--;
-				xprintf("Current screen: %d", curr_screen);
 			}
 		}	break;
 		case CURSOR_DOWN: {
 			if (curr_opt < 1) {
 				curr_opt++;
 				curr_screen++;
-				xprintf("Current screen: %d", curr_screen);
 			}
 		}	break;
 		default:
@@ -55,7 +53,6 @@ view_screen_t scr_title = {
 void screen_manager() {
 	switch (curr_screen) {
 		case 0: {
-			init_snake_coords();
 			SCREEN_TRAN(task_game, &scr_game);
 		}
 	}
